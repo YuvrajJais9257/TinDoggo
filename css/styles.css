@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: #FF97C1;
+}
+
+p{
+  line-height: 1;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin: 20px 0;
+}
+
+/*headings*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Sans-Serif";
+}
+
+h2 {
+  color: black;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  
+  font-size: 1.5rem;
+}
+
+.big-heading{
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-size: 3.5rem;
+}
+
+/*scroll menu*/
+
+.scrollmenu {
+  right: 30%;
+  background-color: #E0144C;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+  margin-top: -20px; /* Adjust the value as needed */
+  
+}
+
+/*image*/
+
+img {
+  color: #FF97C1;
+  padding: 14px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px; /* Add border-radius property */
+}
+
+img:hover {
+  background-color: #9A1663;
+}
+
+/*button*/
+
+#cta button:hover,
+#title button:hover {
+  border: 3px solid #9A1663;
+  color: #000;
+  background: #9A1663;
+  transition: 0.5s;
+}
+
+/*title*/
+
+@media (max-width: 1028px) {
+  .scrollmenu {
+    position: static;
+    transform: rotate(0);
+  }
+  #title{
+    text-align: center;
+  }
+}
+
+#title .container-fluid{
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+.row {
+  background-color: #FF5858;
+  padding: 10px;
+}
+
+/*containers*/
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/*section*/
+
+.colored-section{
+  background-color: #E0144C;
+  color: #FF5858;
+}
+
+.white-section
+{
+  background-color: white;
+}
+
+/*navbar*/
+
+.navbar {
+  padding-bottom: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: transparent;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 20px;
+  color: #FF5858;
+}
+
+.nav-item {
+  padding: 0 18px;
+  
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #FF5858;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*icon*/
+
+.icon {
+  color: #E0144C;
+}
+
+.icon:hover {
+  color: #9A1663;
+}
+
+/*testimonials*/
+
+#testimonials h2 {
+  margin-bottom: 20px;
+}
+
+#testimonials img
+{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px; /* Add border-radius property */
+}
+
+#testimonials em {
+  font-style: italic;
+}
+
+.testimonial_image{
+  width: 25%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/*press*/
+
+#press
+{
+  padding-bottom: 3%;
+}
+.press-logo
+{
+  width: 50%;
+  margin: 20px 20px 50px;
+}
+
+/*pricing*/
+
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/*card*/
+
+.card-deck {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.card { 
+  flex: 0 0 auto;
+  width: 300px;
+}
+
+.card img {
+  width: 45%;
+  height: 45%;
+  
+}
+
+/*features*/
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+  background-color: #FF5858;
+}
+
+/*cta*/
+
+#cta{
+  color: white;
+  padding: 7% 15%;
+}
+
+.cta-heading{
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.social-icon{
+  margin: 20px 10px;
+}
