@@ -1,16 +1,17 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
+/* Color Scheme */
+:root {
+  --primary-color: #4ECCA3;
+  --secondary-color: #393E46;
+  --text-color: #ffffff;
+  --button-color: #ffffff;
+  --button-hover-color: #2B8F71;
 }
 
 body {
   background-color: #FF97C1;
 }
 
-p{
+p {
   line-height: 1;
 }
 
@@ -33,11 +34,10 @@ h2 {
 }
 
 h3 {
-  
   font-size: 1.5rem;
 }
 
-.big-heading{
+.big-heading {
   margin-left: auto;
   margin-right: auto;
   color: black;
@@ -55,7 +55,6 @@ h3 {
   white-space: nowrap;
   padding: 10px 0;
   margin-top: -20px; /* Adjust the value as needed */
-  
 }
 
 /*image*/
@@ -89,12 +88,12 @@ img:hover {
     position: static;
     transform: rotate(0);
   }
-  #title{
+  #title {
     text-align: center;
   }
 }
 
-#title .container-fluid{
+#title .container-fluid {
   padding: 3% 15% 7%;
   text-align: left;
 }
@@ -118,13 +117,12 @@ img:hover {
 
 /*section*/
 
-.colored-section{
+.colored-section {
   background-color: #E0144C;
   color: #FF5858;
 }
 
-.white-section
-{
+.white-section {
   background-color: white;
 }
 
@@ -150,7 +148,6 @@ img:hover {
 
 .nav-item {
   padding: 0 18px;
-  
 }
 
 .nav-link {
@@ -181,8 +178,7 @@ img:hover {
   margin-bottom: 20px;
 }
 
-#testimonials img
-{
+#testimonials img {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
@@ -193,7 +189,7 @@ img:hover {
   font-style: italic;
 }
 
-.testimonial_image{
+.testimonial_image {
   width: 25%;
   border-radius: 100%;
   margin: 20px;
@@ -201,12 +197,11 @@ img:hover {
 
 /*press*/
 
-#press
-{
+#press {
   padding-bottom: 3%;
 }
-.press-logo
-{
+
+.press-logo {
   width: 50%;
   margin: 20px 20px 50px;
 }
@@ -226,20 +221,19 @@ img:hover {
 
 .card-deck {
   display: flex;
-  overflow-x: auto;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   padding-bottom: 20px;
 }
 
-.card { 
-  flex: 0 0 auto;
+.card {
   width: 300px;
 }
 
 .card img {
   width: 45%;
   height: 45%;
-  
 }
 
 /*features*/
@@ -252,17 +246,96 @@ img:hover {
 
 /*cta*/
 
-#cta{
+#cta {
   color: white;
   padding: 7% 15%;
 }
 
-.cta-heading{
+.cta-heading {
   font-family: "Montserrat-Black";
   font-size: 3.5rem;
   line-height: 1.5;
 }
 
-.social-icon{
+.social-icon {
   margin: 20px 10px;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .big-heading {
+    font-size: 2.8rem;
+  }
+
+  .scrollmenu {
+    right: 0;
+  }
+
+  .container-fluid {
+    padding: 5% 10%;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .card-deck {
+    justify-content: flex-start;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  #pricing {
+    padding: 50px;
+  }
+
+  .price-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .big-heading {
+    font-size: 2.5rem;
+  }
+
+  .scrollmenu {
+    right: 0;
+  }
+
+  .container-fluid {
+    padding: 3% 5% 5%;
+  }
+
+  .navbar-brand {
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  #pricing {
+    padding: 20px;
+  }
+
+  .price-text {
+    font-size: 2rem;
+  }
 }
